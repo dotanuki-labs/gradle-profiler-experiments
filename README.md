@@ -20,9 +20,9 @@ Talk and examples delivered in the following events
 
 ## Experiments covered
 
-- Building Kotlin MPP with different JDKs (see here)
-- Bumping Gradle + AGP version (see here)
-- Using new AGP pipeline for Android resources (see here)
+- Building Kotlin MPP with different JDKs
+- Bumping Gradle + AGP version
+- Using new AGP pipeline for Android resources
 
 ## Author
 
