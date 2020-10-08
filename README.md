@@ -6,9 +6,9 @@
 
 Talk and examples delivered in the following events
 
-- N26 Android Meetup (February / 2020)
-- Droidcon EMEA (October / 2020)
-- Android Summit (October / 2020)
+- [N26 Android Meetup](https://www.meetup.com/N26-Tech-Product-Design-Events-in-Barcelona/events/268447714/) (February / 2020)
+- [Droidcon EMEA](https://www.online.droidcon.com/emea2020) (October / 2020)
+- [Android Summit](https://emamo.com/event/android-summit-2020) (October / 2020)
 
 ## Quick Links
 
