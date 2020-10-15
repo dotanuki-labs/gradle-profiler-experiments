@@ -1,12 +1,13 @@
 # Experiments with Gradle Profiler
 
-> Companion repo for my talk "Experiments for your Android builds driven by Gradle Profiler"
+> _Companion repo for my talk "Experiments for your Android builds driven by Gradle Profiler"_
 
 ## Context
 
 Talk and examples delivered in the following events
 
 - [N26 Android Meetup](https://www.meetup.com/N26-Tech-Product-Design-Events-in-Barcelona/events/268447714/) (February / 2020)
+- [GDG SP Android Meetup](https://www.meetup.com/GDG-SP/events/269067015/) (March / 2020)
 - [Droidcon EMEA](https://www.online.droidcon.com/emea2020) (October / 2020)
 - [Android Summit](https://emamo.com/event/android-summit-2020) (October / 2020)
 
