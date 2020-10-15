@@ -15,7 +15,7 @@ Talk and examples delivered in the following events
 - [Gradle Profiler repository](https://github.com/gradle/gradle-profiler)
 - [Online Paired T-test calculator](https://www.statskingdom.com/160MeanT2pair.html)
 - [Paired T-test CLI tool](https://github.com/dotanuki-labs/gradle-profiler-pttest)
-- Presentation slides on Speakerdeck (TODO)
+- [Presentation slides on Speakerdeck])(https://speakerdeck.com/ubiratansoares/experiments-for-your-android-builds-driven-by-gradle-profiler)
 - Blog post (TODO)
 
 ## Experiments covered
