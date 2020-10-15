@@ -1,0 +1,23 @@
+scenario,Build MPP
+version,Gradle 6.3-rc-3
+tasks,build
+value,execution
+warm-up build #1,339094
+warm-up build #2,298888
+warm-up build #3,256557
+warm-up build #4,273978
+measured build #1,272004
+measured build #2,259681
+measured build #3,264035
+measured build #4,257900
+measured build #5,354287
+measured build #6,317239
+measured build #7,275664
+measured build #8,295863
+measured build #9,306469
+measured build #10,298335
+measured build #11,304451
+measured build #12,311235
+measured build #13,304537
+measured build #14,257837
+measured build #15,301207
