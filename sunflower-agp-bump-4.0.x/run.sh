@@ -22,7 +22,6 @@ function require_path() {
 		exit 1
 	fi
 
-
 	PROFILER=`which gradle-profiler`
 	
 	if [[ ! -f ${PROFILER} ]]; then

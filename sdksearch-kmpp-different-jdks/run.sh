@@ -41,7 +41,6 @@ function require_path() {
 		exit 1
 	fi
 
-
 	PROFILER=`which gradle-profiler`
 	
 	if [[ ! -f ${PROFILER} ]]; then
@@ -72,7 +71,6 @@ function run_benchmark() {
 		--iterations $INTERATIONS \
 		--warmups $WARMUPS
 }
-
 
 echo "\n🚀 ${CYAN}Building Kotlin MPP with different JDKs${NORMAL}"
 
