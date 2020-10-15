@@ -15,14 +15,61 @@ Talk and examples delivered in the following events
 - [Gradle Profiler repository](https://github.com/gradle/gradle-profiler)
 - [Online Paired T-test calculator](https://www.statskingdom.com/160MeanT2pair.html)
 - [Paired T-test CLI tool](https://github.com/dotanuki-labs/gradle-profiler-pttest)
-- [Presentation slides on Speakerdeck])(https://speakerdeck.com/ubiratansoares/experiments-for-your-android-builds-driven-by-gradle-profiler)
+- [Presentation slides on Speakerdeck](https://speakerdeck.com/ubiratansoares/experiments-for-your-android-builds-driven-by-gradle-profiler)
 - Blog post (TODO)
 
 ## Experiments covered
 
-- Building Kotlin MPP with different JDKs
-- Bumping Gradle + AGP version
-- Using new AGP pipeline for Android resources
+### From 2020 / H1
+
+In the early of 2020 I run the following benchmarks locally, quite manually but I've kept the datasets. These were the examples and datasets I've used in my public talks about Gradle Profiler.
+
+#### Building Kotlin MPP with different JDKs
+
+- Target : [SdkSearch](https://github.com/JakeWharton/SdkSearch)
+- Datasets :[conferences/sdksearch-kmpp-different-jdks](conferences/sdksearch-kmpp-different-jdks)
+- Goal : demonstrate that builds don't improve when building Kotlin MPP with JDK11 instead of JDK8
+
+#### Bumping Gradle + AGP version
+
+- Target : [IOSched](https://github.com/google/iosched)
+- Datasets :[conferences/iosched-updating-gradle-agp](conferences/iosched-updating-gradle-agp)
+- Goal : demonstrate that bumping Gradle + AGP from 3.4.x to 3.6.x brings a lot of improvement in the Android build
+
+### From 2020 / H2
+
+#### Building Kotlin MPP with different JDKs
+
+- Target : [SdkSearch](https://github.com/JakeWharton/SdkSearch)
+- Datasets :[sdksearch-kmpp-different-jdks](sdksearch-kmpp-different-jdks)
+- Goal : demonstrate that builds don't improve when building Kotlin MPP with JDK11 instead of JDK8
+
+Running the experiment and generating data by yourself (OSX only)
+
+1. Make sure you have `git`, `gradle-profiler`, `jdk8` and `jdk11` installed
+2. Run the companion script
+
+```bash
+cd sdksearch-kmpp-different-jdks
+./run.sh
+```
+
+#### Bumping Gradle + AGP version
+
+
+- Target : [Sunflower](https://github.com/android/sunflower)
+- Datasets :[sunflower-agp-bump-4.0.x](sunflower-agp-bump-4.0.x)
+- Goal : demonstrate that bumping Gradle + AGP from 3.6.x to 4.0x `DOES NOT` bring improvements in the Android build at all
+
+Running the experiment and generating data by yourself (OSX only)
+
+1. Make sure you have `git`, `gradle-profiler` and `jdk8` installed
+2. Run the companion script
+
+```bash
+cd sunflower-agp-bump-4.0.x
+./run.sh
+```
 
 ## Author
 
