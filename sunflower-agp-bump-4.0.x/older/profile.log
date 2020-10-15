@@ -1,0 +1,2832 @@
+
+* Started at 2020-10-09T13:46:55.337Z
+
+* Settings
+Project dir: sunflower
+Output dir: older
+Profiler: none
+Benchmark: true
+Versions: []
+Gradle User Home: gradle-user-home
+Targets: []
+Warm-ups: 3
+Builds: 15
+
+* Inspecting the build using its default Gradle version
+
+> Task :help
+
+Welcome to Gradle 5.6.4.
+
+To run a build, run gradle <task> ...
+
+To see a list of available tasks, run gradle tasks
+
+To see a list of command-line options, run gradle --help
+
+To see more detail about a task, run gradle help --task <task>
+
+For troubleshooting, visit https://help.gradle.org
+
+BUILD SUCCESSFUL in 6s
+1 actionable task: 1 executed
+
+* Stopping daemons
+Running command /Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/gradle-user-home/wrapper/dists/gradle-5.6.4-all/ankdp27end7byghfw1q2sw75f/gradle-5.6.4/bin/gradle --stop --gradle-user-home /Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/gradle-user-home
+Stopping Daemon(s)
+1 Daemon stopped
+
+* Scenarios
+Scenario: Build Project using Gradle 5.6.4
+  Gradle 5.6.4 (/Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/gradle-user-home/wrapper/dists/gradle-5.6.4-all/ankdp27end7byghfw1q2sw75f/gradle-5.6.4)
+  Run using: Tooling API
+  Run: run tasks build
+  Cleanup: run tasks clean
+  Gradle args: [--no-build-cache]
+  Build changes: []
+  Warm-ups: 3
+  Builds: 15
+
+* Running scenario Build Project using Gradle 5.6.4 (scenario 1/1)
+
+* Stopping daemons
+Running command /Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/gradle-user-home/wrapper/dists/gradle-5.6.4-all/ankdp27end7byghfw1q2sw75f/gradle-5.6.4/bin/gradle --stop --gradle-user-home /Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/gradle-user-home
+No Gradle daemons are running.
+
+* Build details
+Gradle version: Gradle 5.6.4
+Java home: /Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
+OS: mac os x x86_64 10.15.6
+JVM args:
+  -Xmx1536m
+  -Dfile.encoding=UTF-8
+  -Duser.country=GB
+  -Duser.language=en
+  -Duser.variant
+  -Dorg.gradle.profiler.scenario=build
+Gradle args:
+  --gradle-user-home
+  /Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/gradle-user-home
+  --no-build-cache
+  -I
+  /private/var/folders/w8/yyb_kzbx32sgg1lnnj6zpk7r0000gp/T/gradleProfiler3192939505265882164.gradle
+
+* Running cleanup for warm-up build #1
+> Task :clean
+> Task :app:clean
+
+BUILD SUCCESSFUL in 5s
+2 actionable tasks: 2 executed
+Used daemon with pid 37660
+
+* Running warm-up build #1
+Observed package id 'build-tools;28.0.3' in inconsistent location '/Users/ubiratansoares/Library/Android/sdk/build-tools/28.0.3' (Expected '/Users/ubiratansoares/Library/Android/build-tools/28.0.3')
+Observed package id 'build-tools;29.0.0' in inconsistent location '/Users/ubiratansoares/Library/Android/sdk/build-tools/29.0.0' (Expected '/Users/ubiratansoares/Library/Android/build-tools/29.0.0')
+Observed package id 'build-tools;29.0.2' in inconsistent location '/Users/ubiratansoares/Library/Android/sdk/build-tools/29.0.2' (Expected '/Users/ubiratansoares/Library/Android/build-tools/29.0.2')
+Observed package id 'build-tools;29.0.3' in inconsistent location '/Users/ubiratansoares/Library/Android/sdk/build-tools/29.0.3' (Expected '/Users/ubiratansoares/Library/Android/build-tools/29.0.3')
+Observed package id 'build-tools;30.0.1' in inconsistent location '/Users/ubiratansoares/Library/Android/sdk/build-tools/30.0.1' (Expected '/Users/ubiratansoares/Library/Android/build-tools/30.0.1')
+Observed package id 'build-tools;30.0.2' in inconsistent location '/Users/ubiratansoares/Library/Android/sdk/build-tools/30.0.2' (Expected '/Users/ubiratansoares/Library/Android/build-tools/30.0.2')
+Observed package id 'emulator' in inconsistent location '/Users/ubiratansoares/Library/Android/sdk/emulator' (Expected '/Users/ubiratansoares/Library/Android/emulator')
+Observed package id 'extras;intel;Hardware_Accelerated_Execution_Manager' in inconsistent location '/Users/ubiratansoares/Library/Android/sdk/extras/intel/Hardware_Accelerated_Execution_Manager' (Expected '/Users/ubiratansoares/Library/Android/extras/intel/Hardware_Accelerated_Execution_Manager')
+Observed package id 'patcher;v4' in inconsistent location '/Users/ubiratansoares/Library/Android/sdk/patcher/v4' (Expected '/Users/ubiratansoares/Library/Android/patcher/v4')
+Observed package id 'platform-tools' in inconsistent location '/Users/ubiratansoares/Library/Android/sdk/platform-tools' (Expected '/Users/ubiratansoares/Library/Android/platform-tools')
+Already observed package id 'platform-tools' in '/Users/ubiratansoares/Library/Android/platform-tools'. Skipping duplicate at '/Users/ubiratansoares/Library/Android/sdk/platform-tools'
+Observed package id 'platforms;android-27' in inconsistent location '/Users/ubiratansoares/Library/Android/sdk/platforms/android-27' (Expected '/Users/ubiratansoares/Library/Android/platforms/android-27')
+Observed package id 'platforms;android-28' in inconsistent location '/Users/ubiratansoares/Library/Android/sdk/platforms/android-28' (Expected '/Users/ubiratansoares/Library/Android/platforms/android-28')
+Observed package id 'platforms;android-29' in inconsistent location '/Users/ubiratansoares/Library/Android/sdk/platforms/android-29' (Expected '/Users/ubiratansoares/Library/Android/platforms/android-29')
+Observed package id 'platforms;android-30' in inconsistent location '/Users/ubiratansoares/Library/Android/sdk/platforms/android-30' (Expected '/Users/ubiratansoares/Library/Android/platforms/android-30')
+Observed package id 'sources;android-27' in inconsistent location '/Users/ubiratansoares/Library/Android/sdk/sources/android-27' (Expected '/Users/ubiratansoares/Library/Android/sources/android-27')
+Observed package id 'sources;android-28' in inconsistent location '/Users/ubiratansoares/Library/Android/sdk/sources/android-28' (Expected '/Users/ubiratansoares/Library/Android/sources/android-28')
+Observed package id 'sources;android-29' in inconsistent location '/Users/ubiratansoares/Library/Android/sdk/sources/android-29' (Expected '/Users/ubiratansoares/Library/Android/sources/android-29')
+Observed package id 'system-images;android-23;google_apis;x86' in inconsistent location '/Users/ubiratansoares/Library/Android/sdk/system-images/android-23/google_apis/x86' (Expected '/Users/ubiratansoares/Library/Android/system-images/android-23/google_apis/x86')
+Observed package id 'system-images;android-27;google_apis;x86' in inconsistent location '/Users/ubiratansoares/Library/Android/sdk/system-images/android-27/google_apis/x86' (Expected '/Users/ubiratansoares/Library/Android/system-images/android-27/google_apis/x86')
+Observed package id 'system-images;android-28;google_apis;x86' in inconsistent location '/Users/ubiratansoares/Library/Android/sdk/system-images/android-28/google_apis/x86' (Expected '/Users/ubiratansoares/Library/Android/system-images/android-28/google_apis/x86')
+Observed package id 'system-images;android-28;google_apis_playstore;x86' in inconsistent location '/Users/ubiratansoares/Library/Android/sdk/system-images/android-28/google_apis_playstore/x86' (Expected '/Users/ubiratansoares/Library/Android/system-images/android-28/google_apis_playstore/x86')
+Observed package id 'system-images;android-30;google_apis_playstore;x86' in inconsistent location '/Users/ubiratansoares/Library/Android/sdk/system-images/android-30/google_apis_playstore/x86' (Expected '/Users/ubiratansoares/Library/Android/system-images/android-30/google_apis_playstore/x86')
+Observed package id 'tools' in inconsistent location '/Users/ubiratansoares/Library/Android/sdk/tools' (Expected '/Users/ubiratansoares/Library/Android/tools')
+> Task :assemble UP-TO-DATE
+> Task :spotlessKotlin
+> Task :spotlessKotlinCheck
+> Task :spotlessCheck
+> Task :check
+> Task :build
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :app:generateDebugBuildConfig
+> Task :app:compileDebugRenderscript NO-SOURCE
+> Task :app:writeDebugApplicationId
+> Task :app:generateSafeArgsDebug
+> Task :app:prepareLintJar
+> Task :app:prepareLintJarForPublish
+> Task :app:generateDebugSources
+> Task :app:dataBindingExportBuildInfoDebug
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:dataBindingMergeGenClassesDebug
+> Task :app:generateDebugResValues
+> Task :app:generateDebugResources
+> Task :app:dataBindingExportFeaturePackageIdsDebug
+> Task :app:mainApkListPersistenceDebug
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:processDebugManifest
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:processDebugResources
+> Task :app:kaptGenerateStubsDebugKotlin
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders
+> Task :app:generateDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:compileReleaseAidl NO-SOURCE
+> Task :app:compileReleaseRenderscript NO-SOURCE
+> Task :app:generateReleaseBuildConfig
+> Task :app:writeReleaseApplicationId
+> Task :app:generateSafeArgsRelease
+> Task :app:generateReleaseSources
+> Task :app:dataBindingExportBuildInfoRelease
+> Task :app:generateReleaseResValues
+> Task :app:generateReleaseResources
+> Task :app:mainApkListPersistenceRelease
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:processReleaseManifest
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+
+> Task :app:kaptDebugKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1
+> Task :app:mergeReleaseResources
+> Task :app:processReleaseResources
+
+> Task :app:kaptDebugKotlin
+[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:compileDebugKotlin
+> Task :app:mergeExtDexDebug
+> Task :app:dataBindingExportFeaturePackageIdsRelease
+> Task :app:dataBindingMergeDependencyArtifactsRelease
+> Task :app:dataBindingMergeGenClassesRelease
+> Task :app:dataBindingGenBaseClassesRelease
+> Task :app:kaptGenerateStubsReleaseKotlin
+> Task :app:javaPreCompileDebug
+> Task :app:compileDebugJavaWithJavac
+> Task :app:compileDebugSources
+
+> Task :app:kaptReleaseKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:dexBuilderDebug
+> Task :app:compileReleaseKotlin
+> Task :app:mergeProjectDexDebug
+> Task :app:mergeDebugJavaResource
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:javaPreCompileRelease
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:compileReleaseSources
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:lintVitalRelease SKIPPED
+> Task :app:dexBuilderRelease
+> Task :app:desugarReleaseFileDependencies
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders
+> Task :app:generateReleaseAssets
+> Task :app:mergeReleaseAssets
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :app:mergeReleaseJniLibFolders
+
+> Task :app:lint
+Ran lint on variant debug: 19 issues found
+Ran lint on variant release: 19 issues found
+Wrote HTML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.html
+Wrote XML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.xml
+
+> Task :app:mergeReleaseNativeLibs
+> Task :app:stripReleaseDebugSymbols
+> Task :app:mergeExtDexRelease
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:preReleaseUnitTestBuild UP-TO-DATE
+> Task :app:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :app:kaptGenerateStubsDebugUnitTestKotlin
+> Task :app:kaptDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:kaptGenerateStubsReleaseUnitTestKotlin
+> Task :app:kaptReleaseUnitTestKotlin
+> Task :app:compileReleaseUnitTestKotlin
+> Task :app:mergeDexRelease
+> Task :app:mergeReleaseJavaResource
+> Task :app:packageRelease
+> Task :app:assembleRelease
+> Task :app:assemble
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testDebugUnitTest
+> Task :app:javaPreCompileReleaseUnitTest
+> Task :app:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testReleaseUnitTest
+> Task :app:test
+> Task :app:check
+> Task :app:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.6.4/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1m 8s
+82 actionable tasks: 82 executed
+Used daemon with pid 37660
+Execution time 68628 ms
+
+* Running cleanup for warm-up build #2
+> Task :clean
+> Task :app:clean
+
+BUILD SUCCESSFUL in 1s
+2 actionable tasks: 2 executed
+Used daemon with pid 37660
+
+* Running warm-up build #2
+> Task :assemble UP-TO-DATE
+> Task :spotlessKotlin UP-TO-DATE
+> Task :spotlessKotlinCheck UP-TO-DATE
+> Task :spotlessCheck UP-TO-DATE
+> Task :check UP-TO-DATE
+> Task :build UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :app:generateDebugBuildConfig
+> Task :app:compileDebugRenderscript NO-SOURCE
+> Task :app:writeDebugApplicationId
+> Task :app:generateSafeArgsDebug
+> Task :app:prepareLintJar UP-TO-DATE
+> Task :app:prepareLintJarForPublish UP-TO-DATE
+> Task :app:generateDebugSources
+> Task :app:dataBindingExportBuildInfoDebug
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:generateDebugResValues
+> Task :app:generateDebugResources
+> Task :app:dataBindingMergeGenClassesDebug
+> Task :app:dataBindingExportFeaturePackageIdsDebug
+> Task :app:mainApkListPersistenceDebug
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:processDebugManifest
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:processDebugResources
+> Task :app:kaptGenerateStubsDebugKotlin
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders
+> Task :app:generateDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:compileReleaseAidl NO-SOURCE
+> Task :app:compileReleaseRenderscript NO-SOURCE
+> Task :app:generateReleaseBuildConfig
+> Task :app:writeReleaseApplicationId
+> Task :app:generateSafeArgsRelease
+> Task :app:generateReleaseSources
+> Task :app:dataBindingExportBuildInfoRelease
+> Task :app:generateReleaseResValues
+> Task :app:generateReleaseResources
+> Task :app:dataBindingMergeGenClassesRelease
+> Task :app:mainApkListPersistenceRelease
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:processReleaseManifest
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+> Task :app:dataBindingExportFeaturePackageIdsRelease
+> Task :app:mergeExtDexDebug
+> Task :app:dataBindingMergeDependencyArtifactsRelease
+
+> Task :app:kaptDebugKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:mergeReleaseResources
+> Task :app:dataBindingGenBaseClassesRelease
+> Task :app:processReleaseResources
+> Task :app:kaptGenerateStubsReleaseKotlin
+
+> Task :app:kaptReleaseKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:compileDebugKotlin
+> Task :app:compileReleaseKotlin
+> Task :app:javaPreCompileDebug
+> Task :app:compileDebugJavaWithJavac
+> Task :app:compileDebugSources
+> Task :app:dexBuilderDebug
+> Task :app:javaPreCompileRelease
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:compileReleaseSources
+> Task :app:mergeDebugJavaResource
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:lintVitalRelease SKIPPED
+> Task :app:dexBuilderRelease
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:desugarReleaseFileDependencies
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders
+> Task :app:generateReleaseAssets
+> Task :app:mergeReleaseAssets
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :app:mergeReleaseJniLibFolders
+
+> Task :app:lint
+Ran lint on variant debug: 19 issues found
+Ran lint on variant release: 19 issues found
+Wrote HTML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.html
+Wrote XML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.xml
+
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:preReleaseUnitTestBuild UP-TO-DATE
+> Task :app:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :app:mergeReleaseJavaResource
+> Task :app:mergeExtDexRelease
+> Task :app:kaptGenerateStubsDebugUnitTestKotlin
+> Task :app:kaptDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:kaptGenerateStubsReleaseUnitTestKotlin
+> Task :app:kaptReleaseUnitTestKotlin
+> Task :app:compileReleaseUnitTestKotlin
+> Task :app:mergeDexRelease
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testDebugUnitTest
+> Task :app:javaPreCompileReleaseUnitTest
+> Task :app:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testReleaseUnitTest
+> Task :app:test
+> Task :app:check
+> Task :app:mergeReleaseNativeLibs
+> Task :app:stripReleaseDebugSymbols
+> Task :app:packageRelease
+> Task :app:assembleRelease
+> Task :app:assemble
+> Task :app:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.6.4/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 56s
+82 actionable tasks: 79 executed, 3 up-to-date
+Used daemon with pid 37660
+Execution time 56476 ms
+
+* Running cleanup for warm-up build #3
+> Task :clean
+> Task :app:clean
+
+BUILD SUCCESSFUL in 1s
+2 actionable tasks: 2 executed
+Used daemon with pid 37660
+
+* Running warm-up build #3
+> Task :assemble UP-TO-DATE
+> Task :spotlessKotlin UP-TO-DATE
+> Task :spotlessKotlinCheck UP-TO-DATE
+> Task :spotlessCheck UP-TO-DATE
+> Task :check UP-TO-DATE
+> Task :build UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :app:generateDebugBuildConfig
+> Task :app:compileDebugRenderscript NO-SOURCE
+> Task :app:writeDebugApplicationId
+> Task :app:generateSafeArgsDebug
+> Task :app:prepareLintJar UP-TO-DATE
+> Task :app:prepareLintJarForPublish UP-TO-DATE
+> Task :app:generateDebugSources
+> Task :app:dataBindingExportBuildInfoDebug
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:dataBindingMergeGenClassesDebug
+> Task :app:generateDebugResValues
+> Task :app:generateDebugResources
+> Task :app:dataBindingExportFeaturePackageIdsDebug
+> Task :app:mainApkListPersistenceDebug
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:processDebugManifest
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:processDebugResources
+> Task :app:kaptGenerateStubsDebugKotlin
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders
+> Task :app:generateDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:compileReleaseAidl NO-SOURCE
+> Task :app:compileReleaseRenderscript NO-SOURCE
+> Task :app:generateReleaseBuildConfig
+> Task :app:writeReleaseApplicationId
+> Task :app:generateSafeArgsRelease
+> Task :app:generateReleaseSources
+> Task :app:dataBindingExportBuildInfoRelease
+> Task :app:generateReleaseResValues
+> Task :app:generateReleaseResources
+> Task :app:dataBindingMergeDependencyArtifactsRelease
+> Task :app:mainApkListPersistenceRelease
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:processReleaseManifest
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+> Task :app:mergeExtDexDebug
+> Task :app:dataBindingMergeGenClassesRelease
+> Task :app:dataBindingExportFeaturePackageIdsRelease
+
+> Task :app:kaptDebugKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:mergeReleaseResources
+> Task :app:dataBindingGenBaseClassesRelease
+> Task :app:processReleaseResources
+> Task :app:kaptGenerateStubsReleaseKotlin
+
+> Task :app:kaptReleaseKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:compileDebugKotlin
+> Task :app:compileReleaseKotlin
+> Task :app:javaPreCompileDebug
+> Task :app:compileDebugJavaWithJavac
+> Task :app:compileDebugSources
+> Task :app:dexBuilderDebug
+> Task :app:javaPreCompileRelease
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:compileReleaseSources
+> Task :app:mergeDebugJavaResource
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:lintVitalRelease SKIPPED
+> Task :app:dexBuilderRelease
+> Task :app:desugarReleaseFileDependencies
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders
+> Task :app:generateReleaseAssets
+> Task :app:mergeReleaseAssets
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :app:mergeReleaseJniLibFolders
+
+> Task :app:lint
+Ran lint on variant debug: 19 issues found
+Ran lint on variant release: 19 issues found
+Wrote HTML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.html
+Wrote XML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.xml
+
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:preReleaseUnitTestBuild UP-TO-DATE
+> Task :app:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :app:mergeReleaseJavaResource
+> Task :app:kaptGenerateStubsDebugUnitTestKotlin
+> Task :app:kaptDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:kaptGenerateStubsReleaseUnitTestKotlin
+> Task :app:kaptReleaseUnitTestKotlin
+> Task :app:compileReleaseUnitTestKotlin
+> Task :app:mergeExtDexRelease
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testDebugUnitTest
+> Task :app:mergeReleaseNativeLibs
+> Task :app:stripReleaseDebugSymbols
+> Task :app:mergeDexRelease
+> Task :app:packageRelease
+> Task :app:assembleRelease
+> Task :app:assemble
+> Task :app:javaPreCompileReleaseUnitTest
+> Task :app:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testReleaseUnitTest
+> Task :app:test
+> Task :app:check
+> Task :app:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.6.4/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 53s
+82 actionable tasks: 79 executed, 3 up-to-date
+Used daemon with pid 37660
+Execution time 53496 ms
+
+* Using args for instrumented builds:
+
+* Running cleanup for measured build #1
+> Task :clean
+> Task :app:clean
+
+BUILD SUCCESSFUL in 984ms
+2 actionable tasks: 2 executed
+Used daemon with pid 37660
+
+* Running measured build #1
+> Task :assemble UP-TO-DATE
+> Task :spotlessKotlin UP-TO-DATE
+> Task :spotlessKotlinCheck UP-TO-DATE
+> Task :spotlessCheck UP-TO-DATE
+> Task :check UP-TO-DATE
+> Task :build UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :app:generateDebugBuildConfig
+> Task :app:compileDebugRenderscript NO-SOURCE
+> Task :app:writeDebugApplicationId
+> Task :app:generateSafeArgsDebug
+> Task :app:prepareLintJar UP-TO-DATE
+> Task :app:prepareLintJarForPublish UP-TO-DATE
+> Task :app:generateDebugSources
+> Task :app:dataBindingExportBuildInfoDebug
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:generateDebugResValues
+> Task :app:generateDebugResources
+> Task :app:dataBindingMergeGenClassesDebug
+> Task :app:dataBindingExportFeaturePackageIdsDebug
+> Task :app:mainApkListPersistenceDebug
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:processDebugManifest
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:processDebugResources
+> Task :app:kaptGenerateStubsDebugKotlin
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders
+> Task :app:generateDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:compileReleaseAidl NO-SOURCE
+> Task :app:compileReleaseRenderscript NO-SOURCE
+> Task :app:generateReleaseBuildConfig
+> Task :app:writeReleaseApplicationId
+> Task :app:generateSafeArgsRelease
+> Task :app:generateReleaseSources
+> Task :app:dataBindingExportBuildInfoRelease
+> Task :app:generateReleaseResValues
+> Task :app:generateReleaseResources
+> Task :app:dataBindingMergeDependencyArtifactsRelease
+> Task :app:dataBindingExportFeaturePackageIdsRelease
+> Task :app:mainApkListPersistenceRelease
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:processReleaseManifest
+> Task :app:dataBindingMergeGenClassesRelease
+
+> Task :app:kaptDebugKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+> Task :app:mergeExtDexDebug
+> Task :app:mergeReleaseResources
+> Task :app:dataBindingGenBaseClassesRelease
+> Task :app:processReleaseResources
+
+> Task :app:kaptDebugKotlin
+[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:kaptGenerateStubsReleaseKotlin
+
+> Task :app:kaptReleaseKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1
+> Task :app:compileDebugKotlin
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:javaPreCompileDebug
+> Task :app:compileDebugJavaWithJavac
+> Task :app:compileDebugSources
+> Task :app:dexBuilderDebug
+
+> Task :app:kaptReleaseKotlin
+[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:compileReleaseKotlin
+> Task :app:mergeProjectDexDebug
+> Task :app:mergeDebugJavaResource
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:javaPreCompileRelease
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:compileReleaseSources
+> Task :app:lintVitalRelease SKIPPED
+> Task :app:dexBuilderRelease
+> Task :app:desugarReleaseFileDependencies
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders
+> Task :app:generateReleaseAssets
+> Task :app:mergeReleaseAssets
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :app:mergeReleaseJniLibFolders
+
+> Task :app:lint
+Ran lint on variant debug: 19 issues found
+Ran lint on variant release: 19 issues found
+Wrote HTML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.html
+Wrote XML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.xml
+
+> Task :app:mergeReleaseNativeLibs
+> Task :app:stripReleaseDebugSymbols
+> Task :app:mergeExtDexRelease
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:kaptGenerateStubsDebugUnitTestKotlin
+> Task :app:kaptDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:kaptGenerateStubsReleaseUnitTestKotlin
+> Task :app:kaptReleaseUnitTestKotlin
+> Task :app:compileReleaseUnitTestKotlin
+> Task :app:preReleaseUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testDebugUnitTest
+> Task :app:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :app:mergeReleaseJavaResource
+> Task :app:javaPreCompileReleaseUnitTest
+> Task :app:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testReleaseUnitTest
+> Task :app:test
+> Task :app:check
+> Task :app:mergeDexRelease
+> Task :app:packageRelease
+> Task :app:assembleRelease
+> Task :app:assemble
+> Task :app:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.6.4/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 37s
+82 actionable tasks: 79 executed, 3 up-to-date
+Used daemon with pid 37660
+Execution time 37382 ms
+
+* Running cleanup for measured build #2
+> Task :clean
+> Task :app:clean
+
+BUILD SUCCESSFUL in 946ms
+2 actionable tasks: 2 executed
+Used daemon with pid 37660
+
+* Running measured build #2
+> Task :assemble UP-TO-DATE
+> Task :spotlessKotlin UP-TO-DATE
+> Task :spotlessKotlinCheck UP-TO-DATE
+> Task :spotlessCheck UP-TO-DATE
+> Task :check UP-TO-DATE
+> Task :build UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :app:compileDebugRenderscript NO-SOURCE
+> Task :app:writeDebugApplicationId
+> Task :app:generateSafeArgsDebug
+> Task :app:prepareLintJar UP-TO-DATE
+> Task :app:prepareLintJarForPublish UP-TO-DATE
+> Task :app:generateDebugSources
+> Task :app:dataBindingExportBuildInfoDebug
+> Task :app:generateDebugResValues
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:generateDebugResources
+> Task :app:dataBindingMergeGenClassesDebug
+> Task :app:dataBindingExportFeaturePackageIdsDebug
+> Task :app:mainApkListPersistenceDebug
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:processDebugManifest
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:processDebugResources
+> Task :app:kaptGenerateStubsDebugKotlin
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders
+> Task :app:generateDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:compileReleaseAidl NO-SOURCE
+> Task :app:compileReleaseRenderscript NO-SOURCE
+> Task :app:generateReleaseBuildConfig
+> Task :app:writeReleaseApplicationId
+> Task :app:generateSafeArgsRelease
+> Task :app:generateReleaseSources
+> Task :app:dataBindingExportBuildInfoRelease
+> Task :app:generateReleaseResValues
+> Task :app:generateReleaseResources
+> Task :app:dataBindingMergeGenClassesRelease
+> Task :app:mainApkListPersistenceRelease
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:processReleaseManifest
+> Task :app:dataBindingMergeDependencyArtifactsRelease
+> Task :app:dataBindingExportFeaturePackageIdsRelease
+
+> Task :app:kaptDebugKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+> Task :app:mergeExtDexDebug
+> Task :app:mergeReleaseResources
+> Task :app:dataBindingGenBaseClassesRelease
+> Task :app:processReleaseResources
+
+> Task :app:kaptDebugKotlin
+[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:kaptGenerateStubsReleaseKotlin
+
+> Task :app:kaptReleaseKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1
+> Task :app:compileDebugKotlin
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:javaPreCompileDebug
+> Task :app:compileDebugJavaWithJavac
+> Task :app:compileDebugSources
+> Task :app:dexBuilderDebug
+
+> Task :app:kaptReleaseKotlin
+[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:compileReleaseKotlin
+> Task :app:mergeDebugJavaResource
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:javaPreCompileRelease
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:compileReleaseSources
+> Task :app:lintVitalRelease SKIPPED
+> Task :app:dexBuilderRelease
+> Task :app:desugarReleaseFileDependencies
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders
+> Task :app:generateReleaseAssets
+> Task :app:mergeReleaseAssets
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :app:mergeReleaseJniLibFolders
+
+> Task :app:lint
+Ran lint on variant debug: 19 issues found
+Ran lint on variant release: 19 issues found
+Wrote HTML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.html
+Wrote XML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.xml
+
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:preReleaseUnitTestBuild UP-TO-DATE
+> Task :app:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :app:mergeExtDexRelease
+> Task :app:kaptGenerateStubsDebugUnitTestKotlin
+> Task :app:kaptDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:kaptGenerateStubsReleaseUnitTestKotlin
+> Task :app:kaptReleaseUnitTestKotlin
+> Task :app:compileReleaseUnitTestKotlin
+> Task :app:mergeReleaseNativeLibs
+> Task :app:stripReleaseDebugSymbols
+> Task :app:javaPreCompileReleaseUnitTest
+> Task :app:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testReleaseUnitTest
+> Task :app:mergeReleaseJavaResource
+> Task :app:mergeDexRelease
+> Task :app:packageRelease
+> Task :app:assembleRelease
+> Task :app:assemble
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testDebugUnitTest
+> Task :app:test
+> Task :app:check
+> Task :app:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.6.4/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 48s
+82 actionable tasks: 79 executed, 3 up-to-date
+Used daemon with pid 37660
+Execution time 48874 ms
+
+* Running cleanup for measured build #3
+> Task :clean
+> Task :app:clean
+
+BUILD SUCCESSFUL in 886ms
+2 actionable tasks: 2 executed
+Used daemon with pid 37660
+
+* Running measured build #3
+> Task :assemble UP-TO-DATE
+> Task :spotlessKotlin UP-TO-DATE
+> Task :spotlessKotlinCheck UP-TO-DATE
+> Task :spotlessCheck UP-TO-DATE
+> Task :check UP-TO-DATE
+> Task :build UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :app:generateDebugBuildConfig
+> Task :app:compileDebugRenderscript NO-SOURCE
+> Task :app:writeDebugApplicationId
+> Task :app:generateSafeArgsDebug
+> Task :app:prepareLintJar UP-TO-DATE
+> Task :app:prepareLintJarForPublish UP-TO-DATE
+> Task :app:generateDebugSources
+> Task :app:dataBindingExportBuildInfoDebug
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:generateDebugResValues
+> Task :app:generateDebugResources
+> Task :app:dataBindingMergeGenClassesDebug
+> Task :app:dataBindingExportFeaturePackageIdsDebug
+> Task :app:mainApkListPersistenceDebug
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:processDebugManifest
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:processDebugResources
+> Task :app:kaptGenerateStubsDebugKotlin
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders
+> Task :app:generateDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:compileReleaseAidl NO-SOURCE
+> Task :app:compileReleaseRenderscript NO-SOURCE
+> Task :app:generateReleaseBuildConfig
+> Task :app:writeReleaseApplicationId
+> Task :app:generateSafeArgsRelease
+> Task :app:generateReleaseSources
+> Task :app:dataBindingExportBuildInfoRelease
+> Task :app:generateReleaseResValues
+> Task :app:dataBindingMergeGenClassesRelease
+> Task :app:generateReleaseResources
+> Task :app:mainApkListPersistenceRelease
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:processReleaseManifest
+
+> Task :app:kaptDebugKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+> Task :app:mergeExtDexDebug
+> Task :app:dataBindingMergeDependencyArtifactsRelease
+> Task :app:mergeReleaseResources
+> Task :app:dataBindingGenBaseClassesRelease
+> Task :app:processReleaseResources
+
+> Task :app:kaptDebugKotlin
+[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:kaptGenerateStubsReleaseKotlin
+> Task :app:dataBindingExportFeaturePackageIdsRelease
+> Task :app:compileDebugKotlin
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:javaPreCompileDebug
+
+> Task :app:kaptReleaseKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1
+> Task :app:compileDebugJavaWithJavac
+> Task :app:compileDebugSources
+> Task :app:dexBuilderDebug
+
+> Task :app:kaptReleaseKotlin
+[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:compileReleaseKotlin
+> Task :app:mergeDebugJavaResource
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:javaPreCompileRelease
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:compileReleaseSources
+> Task :app:lintVitalRelease SKIPPED
+> Task :app:dexBuilderRelease
+> Task :app:desugarReleaseFileDependencies
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders
+> Task :app:generateReleaseAssets
+> Task :app:mergeReleaseAssets
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :app:mergeReleaseJniLibFolders
+
+> Task :app:lint
+Ran lint on variant debug: 19 issues found
+Ran lint on variant release: 19 issues found
+Wrote HTML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.html
+Wrote XML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.xml
+
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:preReleaseUnitTestBuild UP-TO-DATE
+> Task :app:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :app:mergeReleaseNativeLibs
+> Task :app:stripReleaseDebugSymbols
+> Task :app:kaptGenerateStubsDebugUnitTestKotlin
+> Task :app:kaptDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:kaptGenerateStubsReleaseUnitTestKotlin
+> Task :app:kaptReleaseUnitTestKotlin
+> Task :app:compileReleaseUnitTestKotlin
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testDebugUnitTest
+> Task :app:mergeExtDexRelease
+> Task :app:mergeReleaseJavaResource
+> Task :app:javaPreCompileReleaseUnitTest
+> Task :app:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testReleaseUnitTest
+> Task :app:test
+> Task :app:check
+> Task :app:mergeDexRelease
+> Task :app:packageRelease
+> Task :app:assembleRelease
+> Task :app:assemble
+> Task :app:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.6.4/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 41s
+82 actionable tasks: 79 executed, 3 up-to-date
+Used daemon with pid 37660
+Execution time 41754 ms
+
+* Running cleanup for measured build #4
+> Task :clean
+> Task :app:clean
+
+BUILD SUCCESSFUL in 910ms
+2 actionable tasks: 2 executed
+Used daemon with pid 37660
+
+* Running measured build #4
+> Task :assemble UP-TO-DATE
+> Task :spotlessKotlin UP-TO-DATE
+> Task :spotlessKotlinCheck UP-TO-DATE
+> Task :spotlessCheck UP-TO-DATE
+> Task :check UP-TO-DATE
+> Task :build UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :app:generateDebugBuildConfig
+> Task :app:compileDebugRenderscript NO-SOURCE
+> Task :app:writeDebugApplicationId
+> Task :app:generateSafeArgsDebug
+> Task :app:prepareLintJar UP-TO-DATE
+> Task :app:prepareLintJarForPublish UP-TO-DATE
+> Task :app:generateDebugSources
+> Task :app:dataBindingExportBuildInfoDebug
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:generateDebugResValues
+> Task :app:generateDebugResources
+> Task :app:dataBindingExportFeaturePackageIdsDebug
+> Task :app:dataBindingMergeGenClassesDebug
+> Task :app:mainApkListPersistenceDebug
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:processDebugManifest
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:processDebugResources
+> Task :app:kaptGenerateStubsDebugKotlin
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders
+> Task :app:generateDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:compileReleaseAidl NO-SOURCE
+> Task :app:compileReleaseRenderscript NO-SOURCE
+> Task :app:generateReleaseBuildConfig
+> Task :app:writeReleaseApplicationId
+> Task :app:generateSafeArgsRelease
+> Task :app:generateReleaseSources
+> Task :app:dataBindingExportBuildInfoRelease
+> Task :app:generateReleaseResValues
+> Task :app:generateReleaseResources
+> Task :app:mainApkListPersistenceRelease
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:processReleaseManifest
+> Task :app:dataBindingMergeGenClassesRelease
+> Task :app:dataBindingExportFeaturePackageIdsRelease
+> Task :app:dataBindingMergeDependencyArtifactsRelease
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+
+> Task :app:kaptDebugKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1
+> Task :app:mergeExtDexDebug
+> Task :app:mergeReleaseResources
+> Task :app:dataBindingGenBaseClassesRelease
+> Task :app:processReleaseResources
+
+> Task :app:kaptDebugKotlin
+[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:kaptGenerateStubsReleaseKotlin
+> Task :app:compileDebugKotlin
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:javaPreCompileDebug
+
+> Task :app:kaptReleaseKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1
+> Task :app:compileDebugJavaWithJavac
+> Task :app:compileDebugSources
+> Task :app:dexBuilderDebug
+
+> Task :app:kaptReleaseKotlin
+[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:compileReleaseKotlin
+> Task :app:mergeDebugJavaResource
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:javaPreCompileRelease
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:compileReleaseSources
+> Task :app:lintVitalRelease SKIPPED
+> Task :app:dexBuilderRelease
+> Task :app:desugarReleaseFileDependencies
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders
+> Task :app:generateReleaseAssets
+> Task :app:mergeReleaseAssets
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :app:mergeReleaseJniLibFolders
+
+> Task :app:lint
+Ran lint on variant debug: 19 issues found
+Ran lint on variant release: 19 issues found
+Wrote HTML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.html
+Wrote XML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.xml
+
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:preReleaseUnitTestBuild UP-TO-DATE
+> Task :app:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :app:mergeExtDexRelease
+> Task :app:kaptGenerateStubsDebugUnitTestKotlin
+> Task :app:kaptDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:kaptGenerateStubsReleaseUnitTestKotlin
+> Task :app:kaptReleaseUnitTestKotlin
+> Task :app:compileReleaseUnitTestKotlin
+> Task :app:mergeDexRelease
+> Task :app:mergeReleaseJavaResource
+> Task :app:javaPreCompileReleaseUnitTest
+> Task :app:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testReleaseUnitTest
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testDebugUnitTest
+> Task :app:test
+> Task :app:check
+> Task :app:mergeReleaseNativeLibs
+> Task :app:stripReleaseDebugSymbols
+> Task :app:packageRelease
+> Task :app:assembleRelease
+> Task :app:assemble
+> Task :app:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.6.4/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 34s
+82 actionable tasks: 79 executed, 3 up-to-date
+Used daemon with pid 37660
+Execution time 34184 ms
+
+* Running cleanup for measured build #5
+> Task :clean
+> Task :app:clean
+
+BUILD SUCCESSFUL in 1s
+2 actionable tasks: 2 executed
+Used daemon with pid 37660
+
+* Running measured build #5
+> Task :assemble UP-TO-DATE
+> Task :spotlessKotlin UP-TO-DATE
+> Task :spotlessKotlinCheck UP-TO-DATE
+> Task :spotlessCheck UP-TO-DATE
+> Task :check UP-TO-DATE
+> Task :build UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :app:compileDebugRenderscript NO-SOURCE
+> Task :app:writeDebugApplicationId
+> Task :app:generateSafeArgsDebug
+> Task :app:prepareLintJar UP-TO-DATE
+> Task :app:prepareLintJarForPublish UP-TO-DATE
+> Task :app:generateDebugSources
+> Task :app:dataBindingExportBuildInfoDebug
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:generateDebugResValues
+> Task :app:generateDebugResources
+> Task :app:dataBindingMergeGenClassesDebug
+> Task :app:dataBindingExportFeaturePackageIdsDebug
+> Task :app:mainApkListPersistenceDebug
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:processDebugManifest
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:processDebugResources
+> Task :app:kaptGenerateStubsDebugKotlin
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders
+> Task :app:generateDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:compileReleaseAidl NO-SOURCE
+> Task :app:compileReleaseRenderscript NO-SOURCE
+> Task :app:generateReleaseBuildConfig
+> Task :app:writeReleaseApplicationId
+> Task :app:generateSafeArgsRelease
+> Task :app:generateReleaseSources
+> Task :app:dataBindingExportBuildInfoRelease
+> Task :app:generateReleaseResValues
+> Task :app:generateReleaseResources
+> Task :app:dataBindingMergeDependencyArtifactsRelease
+> Task :app:mainApkListPersistenceRelease
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:processReleaseManifest
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+> Task :app:mergeExtDexDebug
+
+> Task :app:kaptDebugKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1
+> Task :app:mergeReleaseResources
+> Task :app:processReleaseResources
+
+> Task :app:kaptDebugKotlin
+[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:compileDebugKotlin
+> Task :app:dataBindingMergeGenClassesRelease
+> Task :app:dataBindingGenBaseClassesRelease
+> Task :app:kaptGenerateStubsReleaseKotlin
+> Task :app:javaPreCompileDebug
+> Task :app:compileDebugJavaWithJavac
+> Task :app:compileDebugSources
+> Task :app:dexBuilderDebug
+> Task :app:dataBindingExportFeaturePackageIdsRelease
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:desugarReleaseFileDependencies
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders
+> Task :app:generateReleaseAssets
+> Task :app:mergeReleaseAssets
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :app:mergeReleaseJniLibFolders
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:preReleaseUnitTestBuild UP-TO-DATE
+> Task :app:mergeProjectDexDebug
+> Task :app:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :app:kaptGenerateStubsDebugUnitTestKotlin
+> Task :app:kaptDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:mergeReleaseNativeLibs
+> Task :app:stripReleaseDebugSymbols
+> Task :app:mergeExtDexRelease
+
+> Task :app:kaptReleaseKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:mergeDebugJavaResource
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:compileReleaseKotlin
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testDebugUnitTest
+> Task :app:javaPreCompileRelease
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:compileReleaseSources
+> Task :app:lintVitalRelease SKIPPED
+> Task :app:dexBuilderRelease
+
+> Task :app:lint
+Ran lint on variant debug: 19 issues found
+Ran lint on variant release: 19 issues found
+Wrote HTML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.html
+Wrote XML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.xml
+
+> Task :app:kaptGenerateStubsReleaseUnitTestKotlin
+> Task :app:kaptReleaseUnitTestKotlin
+> Task :app:compileReleaseUnitTestKotlin
+> Task :app:mergeDexRelease
+> Task :app:javaPreCompileReleaseUnitTest
+> Task :app:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testReleaseUnitTest
+> Task :app:test
+> Task :app:check
+> Task :app:mergeReleaseJavaResource
+> Task :app:packageRelease
+> Task :app:assembleRelease
+> Task :app:assemble
+> Task :app:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.6.4/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 38s
+82 actionable tasks: 79 executed, 3 up-to-date
+Used daemon with pid 37660
+Execution time 38775 ms
+
+* Running cleanup for measured build #6
+> Task :clean
+> Task :app:clean
+
+BUILD SUCCESSFUL in 997ms
+2 actionable tasks: 2 executed
+Used daemon with pid 37660
+
+* Running measured build #6
+> Task :assemble UP-TO-DATE
+> Task :spotlessKotlin UP-TO-DATE
+> Task :spotlessKotlinCheck UP-TO-DATE
+> Task :spotlessCheck UP-TO-DATE
+> Task :check UP-TO-DATE
+> Task :build UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :app:generateDebugBuildConfig
+> Task :app:compileDebugRenderscript NO-SOURCE
+> Task :app:writeDebugApplicationId
+> Task :app:generateSafeArgsDebug
+> Task :app:prepareLintJar UP-TO-DATE
+> Task :app:prepareLintJarForPublish UP-TO-DATE
+> Task :app:generateDebugSources
+> Task :app:dataBindingExportBuildInfoDebug
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:generateDebugResValues
+> Task :app:generateDebugResources
+> Task :app:dataBindingMergeGenClassesDebug
+> Task :app:dataBindingExportFeaturePackageIdsDebug
+> Task :app:mainApkListPersistenceDebug
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:processDebugManifest
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:processDebugResources
+> Task :app:kaptGenerateStubsDebugKotlin
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders
+> Task :app:generateDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:compileReleaseAidl NO-SOURCE
+> Task :app:compileReleaseRenderscript NO-SOURCE
+> Task :app:generateReleaseBuildConfig
+> Task :app:writeReleaseApplicationId
+> Task :app:generateSafeArgsRelease
+> Task :app:generateReleaseSources
+> Task :app:dataBindingExportBuildInfoRelease
+> Task :app:generateReleaseResValues
+> Task :app:generateReleaseResources
+> Task :app:mainApkListPersistenceRelease
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:processReleaseManifest
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+> Task :app:dataBindingMergeGenClassesRelease
+
+> Task :app:kaptDebugKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:mergeReleaseResources
+> Task :app:processReleaseResources
+> Task :app:mergeExtDexDebug
+> Task :app:dataBindingMergeDependencyArtifactsRelease
+> Task :app:dataBindingGenBaseClassesRelease
+> Task :app:kaptGenerateStubsReleaseKotlin
+> Task :app:compileDebugKotlin
+> Task :app:dataBindingExportFeaturePackageIdsRelease
+> Task :app:javaPreCompileDebug
+> Task :app:compileDebugJavaWithJavac
+> Task :app:compileDebugSources
+> Task :app:dexBuilderDebug
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:desugarReleaseFileDependencies
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders
+> Task :app:generateReleaseAssets
+> Task :app:mergeReleaseAssets
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :app:mergeReleaseJniLibFolders
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:preReleaseUnitTestBuild UP-TO-DATE
+> Task :app:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :app:kaptGenerateStubsDebugUnitTestKotlin
+> Task :app:kaptDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestKotlin
+
+> Task :app:kaptReleaseKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:mergeReleaseNativeLibs
+> Task :app:stripReleaseDebugSymbols
+> Task :app:compileReleaseKotlin
+> Task :app:mergeProjectDexDebug
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testDebugUnitTest
+> Task :app:javaPreCompileRelease
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:compileReleaseSources
+> Task :app:lintVitalRelease SKIPPED
+> Task :app:dexBuilderRelease
+
+> Task :app:lint
+Ran lint on variant release: 19 issues found
+Ran lint on variant debug: 19 issues found
+Wrote HTML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.html
+Wrote XML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.xml
+
+> Task :app:kaptGenerateStubsReleaseUnitTestKotlin
+> Task :app:kaptReleaseUnitTestKotlin
+> Task :app:compileReleaseUnitTestKotlin
+> Task :app:mergeReleaseJavaResource
+> Task :app:mergeExtDexRelease
+> Task :app:mergeDebugJavaResource
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:mergeDexRelease
+> Task :app:packageRelease
+> Task :app:assembleRelease
+> Task :app:assemble
+> Task :app:javaPreCompileReleaseUnitTest
+> Task :app:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testReleaseUnitTest
+> Task :app:test
+> Task :app:check
+> Task :app:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.6.4/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 36s
+82 actionable tasks: 79 executed, 3 up-to-date
+Used daemon with pid 37660
+Execution time 36275 ms
+
+* Running cleanup for measured build #7
+> Task :clean
+> Task :app:clean
+
+BUILD SUCCESSFUL in 968ms
+2 actionable tasks: 2 executed
+Used daemon with pid 37660
+
+* Running measured build #7
+> Task :assemble UP-TO-DATE
+> Task :spotlessKotlin UP-TO-DATE
+> Task :spotlessKotlinCheck UP-TO-DATE
+> Task :spotlessCheck UP-TO-DATE
+> Task :check UP-TO-DATE
+> Task :build UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :app:compileDebugRenderscript NO-SOURCE
+> Task :app:writeDebugApplicationId
+> Task :app:generateSafeArgsDebug
+> Task :app:prepareLintJar UP-TO-DATE
+> Task :app:prepareLintJarForPublish UP-TO-DATE
+> Task :app:generateDebugSources
+> Task :app:dataBindingExportBuildInfoDebug
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:generateDebugResValues
+> Task :app:generateDebugResources
+> Task :app:dataBindingMergeGenClassesDebug
+> Task :app:dataBindingExportFeaturePackageIdsDebug
+> Task :app:mainApkListPersistenceDebug
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:processDebugManifest
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:processDebugResources
+> Task :app:kaptGenerateStubsDebugKotlin
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders
+> Task :app:generateDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:compileReleaseAidl NO-SOURCE
+> Task :app:compileReleaseRenderscript NO-SOURCE
+> Task :app:generateReleaseBuildConfig
+> Task :app:writeReleaseApplicationId
+> Task :app:generateSafeArgsRelease
+> Task :app:generateReleaseSources
+> Task :app:dataBindingExportBuildInfoRelease
+> Task :app:generateReleaseResValues
+> Task :app:generateReleaseResources
+> Task :app:mainApkListPersistenceRelease
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:processReleaseManifest
+> Task :app:dataBindingMergeDependencyArtifactsRelease
+> Task :app:dataBindingExportFeaturePackageIdsRelease
+> Task :app:dataBindingMergeGenClassesRelease
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+> Task :app:mergeExtDexDebug
+
+> Task :app:kaptDebugKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:mergeReleaseResources
+> Task :app:dataBindingGenBaseClassesRelease
+> Task :app:processReleaseResources
+> Task :app:kaptGenerateStubsReleaseKotlin
+> Task :app:compileDebugKotlin
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:javaPreCompileDebug
+
+> Task :app:kaptReleaseKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1
+> Task :app:compileDebugJavaWithJavac
+> Task :app:compileDebugSources
+> Task :app:dexBuilderDebug
+
+> Task :app:kaptReleaseKotlin
+[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:compileReleaseKotlin
+> Task :app:mergeDebugJavaResource
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:javaPreCompileRelease
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:compileReleaseSources
+> Task :app:lintVitalRelease SKIPPED
+> Task :app:dexBuilderRelease
+> Task :app:desugarReleaseFileDependencies
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders
+> Task :app:generateReleaseAssets
+> Task :app:mergeReleaseAssets
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :app:mergeReleaseJniLibFolders
+
+> Task :app:lint
+Ran lint on variant debug: 19 issues found
+Ran lint on variant release: 19 issues found
+Wrote HTML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.html
+Wrote XML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.xml
+
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:preReleaseUnitTestBuild UP-TO-DATE
+> Task :app:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :app:mergeReleaseNativeLibs
+> Task :app:stripReleaseDebugSymbols
+> Task :app:kaptGenerateStubsDebugUnitTestKotlin
+> Task :app:kaptDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:kaptGenerateStubsReleaseUnitTestKotlin
+> Task :app:kaptReleaseUnitTestKotlin
+> Task :app:compileReleaseUnitTestKotlin
+> Task :app:mergeExtDexRelease
+> Task :app:javaPreCompileReleaseUnitTest
+> Task :app:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testReleaseUnitTest
+> Task :app:mergeReleaseJavaResource
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testDebugUnitTest
+> Task :app:test
+> Task :app:check
+> Task :app:mergeDexRelease
+> Task :app:packageRelease
+> Task :app:assembleRelease
+> Task :app:assemble
+> Task :app:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.6.4/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 31s
+82 actionable tasks: 79 executed, 3 up-to-date
+Used daemon with pid 37660
+Execution time 31833 ms
+
+* Running cleanup for measured build #8
+> Task :clean
+> Task :app:clean
+
+BUILD SUCCESSFUL in 969ms
+2 actionable tasks: 2 executed
+Used daemon with pid 37660
+
+* Running measured build #8
+> Task :assemble UP-TO-DATE
+> Task :spotlessKotlin UP-TO-DATE
+> Task :spotlessKotlinCheck UP-TO-DATE
+> Task :spotlessCheck UP-TO-DATE
+> Task :check UP-TO-DATE
+> Task :build UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :app:compileDebugRenderscript NO-SOURCE
+> Task :app:writeDebugApplicationId
+> Task :app:generateSafeArgsDebug
+> Task :app:prepareLintJar UP-TO-DATE
+> Task :app:prepareLintJarForPublish UP-TO-DATE
+> Task :app:generateDebugSources
+> Task :app:dataBindingExportBuildInfoDebug
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:generateDebugResValues
+> Task :app:generateDebugResources
+> Task :app:dataBindingExportFeaturePackageIdsDebug
+> Task :app:mainApkListPersistenceDebug
+> Task :app:dataBindingMergeGenClassesDebug
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:processDebugManifest
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:processDebugResources
+> Task :app:kaptGenerateStubsDebugKotlin
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders
+> Task :app:generateDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:compileReleaseAidl NO-SOURCE
+> Task :app:compileReleaseRenderscript NO-SOURCE
+> Task :app:generateReleaseBuildConfig
+> Task :app:writeReleaseApplicationId
+> Task :app:generateSafeArgsRelease
+> Task :app:generateReleaseSources
+> Task :app:dataBindingExportBuildInfoRelease
+> Task :app:generateReleaseResValues
+> Task :app:generateReleaseResources
+> Task :app:dataBindingExportFeaturePackageIdsRelease
+> Task :app:mainApkListPersistenceRelease
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:processReleaseManifest
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+
+> Task :app:kaptDebugKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1
+> Task :app:mergeExtDexDebug
+> Task :app:dataBindingMergeGenClassesRelease
+> Task :app:dataBindingMergeDependencyArtifactsRelease
+> Task :app:mergeReleaseResources
+> Task :app:dataBindingGenBaseClassesRelease
+> Task :app:processReleaseResources
+
+> Task :app:kaptDebugKotlin
+[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:kaptGenerateStubsReleaseKotlin
+> Task :app:compileDebugKotlin
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:javaPreCompileDebug
+> Task :app:compileDebugJavaWithJavac
+> Task :app:compileDebugSources
+> Task :app:dexBuilderDebug
+> Task :app:desugarReleaseFileDependencies
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders
+> Task :app:generateReleaseAssets
+> Task :app:mergeReleaseAssets
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :app:mergeReleaseJniLibFolders
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:preReleaseUnitTestBuild UP-TO-DATE
+> Task :app:processReleaseUnitTestJavaRes NO-SOURCE
+
+> Task :app:kaptReleaseKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1
+> Task :app:kaptGenerateStubsDebugUnitTestKotlin
+> Task :app:kaptDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestKotlin
+
+> Task :app:kaptReleaseKotlin
+[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:compileReleaseKotlin
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testDebugUnitTest
+> Task :app:mergeReleaseNativeLibs
+> Task :app:stripReleaseDebugSymbols
+> Task :app:mergeExtDexRelease
+> Task :app:javaPreCompileRelease
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:compileReleaseSources
+> Task :app:lintVitalRelease SKIPPED
+> Task :app:mergeProjectDexDebug
+> Task :app:dexBuilderRelease
+
+> Task :app:lint
+Ran lint on variant release: 19 issues found
+Ran lint on variant debug: 19 issues found
+Wrote HTML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.html
+Wrote XML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.xml
+
+> Task :app:kaptGenerateStubsReleaseUnitTestKotlin
+> Task :app:kaptReleaseUnitTestKotlin
+> Task :app:compileReleaseUnitTestKotlin
+> Task :app:mergeDexRelease
+> Task :app:mergeDebugJavaResource
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:mergeReleaseJavaResource
+> Task :app:packageRelease
+> Task :app:assembleRelease
+> Task :app:assemble
+> Task :app:javaPreCompileReleaseUnitTest
+> Task :app:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testReleaseUnitTest
+> Task :app:test
+> Task :app:check
+> Task :app:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.6.4/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 39s
+82 actionable tasks: 79 executed, 3 up-to-date
+Used daemon with pid 37660
+Execution time 39182 ms
+
+* Running cleanup for measured build #9
+> Task :clean
+> Task :app:clean
+
+BUILD SUCCESSFUL in 922ms
+2 actionable tasks: 2 executed
+Used daemon with pid 37660
+
+* Running measured build #9
+> Task :assemble UP-TO-DATE
+> Task :spotlessKotlin UP-TO-DATE
+> Task :spotlessKotlinCheck UP-TO-DATE
+> Task :spotlessCheck UP-TO-DATE
+> Task :check UP-TO-DATE
+> Task :build UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :app:compileDebugRenderscript NO-SOURCE
+> Task :app:writeDebugApplicationId
+> Task :app:generateSafeArgsDebug
+> Task :app:prepareLintJar UP-TO-DATE
+> Task :app:prepareLintJarForPublish UP-TO-DATE
+> Task :app:generateDebugSources
+> Task :app:dataBindingExportBuildInfoDebug
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:generateDebugResValues
+> Task :app:generateDebugResources
+> Task :app:dataBindingMergeGenClassesDebug
+> Task :app:dataBindingExportFeaturePackageIdsDebug
+> Task :app:mainApkListPersistenceDebug
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:processDebugManifest
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:processDebugResources
+> Task :app:kaptGenerateStubsDebugKotlin
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders
+> Task :app:generateDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:compileReleaseAidl NO-SOURCE
+> Task :app:compileReleaseRenderscript NO-SOURCE
+> Task :app:generateReleaseBuildConfig
+> Task :app:writeReleaseApplicationId
+> Task :app:generateSafeArgsRelease
+> Task :app:generateReleaseSources
+> Task :app:dataBindingExportBuildInfoRelease
+> Task :app:generateReleaseResValues
+> Task :app:generateReleaseResources
+> Task :app:dataBindingMergeGenClassesRelease
+> Task :app:dataBindingMergeDependencyArtifactsRelease
+> Task :app:mainApkListPersistenceRelease
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:processReleaseManifest
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+> Task :app:mergeExtDexDebug
+> Task :app:dataBindingExportFeaturePackageIdsRelease
+
+> Task :app:kaptDebugKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:mergeReleaseResources
+> Task :app:dataBindingGenBaseClassesRelease
+> Task :app:processReleaseResources
+> Task :app:kaptGenerateStubsReleaseKotlin
+> Task :app:compileDebugKotlin
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:javaPreCompileDebug
+> Task :app:compileDebugJavaWithJavac
+> Task :app:compileDebugSources
+
+> Task :app:kaptReleaseKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:dexBuilderDebug
+> Task :app:compileReleaseKotlin
+> Task :app:mergeDebugJavaResource
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:javaPreCompileRelease
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:compileReleaseSources
+> Task :app:lintVitalRelease SKIPPED
+> Task :app:dexBuilderRelease
+> Task :app:desugarReleaseFileDependencies
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders
+> Task :app:generateReleaseAssets
+> Task :app:mergeReleaseAssets
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :app:mergeReleaseJniLibFolders
+
+> Task :app:lint
+Ran lint on variant debug: 19 issues found
+Ran lint on variant release: 19 issues found
+Wrote HTML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.html
+Wrote XML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.xml
+
+> Task :app:mergeReleaseJavaResource
+> Task :app:mergeReleaseNativeLibs
+> Task :app:stripReleaseDebugSymbols
+> Task :app:kaptGenerateStubsDebugUnitTestKotlin
+> Task :app:kaptDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:kaptGenerateStubsReleaseUnitTestKotlin
+> Task :app:kaptReleaseUnitTestKotlin
+> Task :app:compileReleaseUnitTestKotlin
+> Task :app:preReleaseUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testDebugUnitTest
+> Task :app:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :app:mergeExtDexRelease
+> Task :app:javaPreCompileReleaseUnitTest
+> Task :app:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testReleaseUnitTest
+> Task :app:test
+> Task :app:check
+> Task :app:mergeDexRelease
+> Task :app:packageRelease
+> Task :app:assembleRelease
+> Task :app:assemble
+> Task :app:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.6.4/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 38s
+82 actionable tasks: 79 executed, 3 up-to-date
+Used daemon with pid 37660
+Execution time 38468 ms
+
+* Running cleanup for measured build #10
+> Task :clean
+> Task :app:clean
+
+BUILD SUCCESSFUL in 602ms
+2 actionable tasks: 2 executed
+Used daemon with pid 37660
+
+* Running measured build #10
+> Task :assemble UP-TO-DATE
+> Task :spotlessKotlin UP-TO-DATE
+> Task :spotlessKotlinCheck UP-TO-DATE
+> Task :spotlessCheck UP-TO-DATE
+> Task :check UP-TO-DATE
+> Task :build UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :app:compileDebugRenderscript NO-SOURCE
+> Task :app:writeDebugApplicationId
+> Task :app:generateSafeArgsDebug
+> Task :app:prepareLintJar UP-TO-DATE
+> Task :app:prepareLintJarForPublish UP-TO-DATE
+> Task :app:generateDebugSources
+> Task :app:dataBindingExportBuildInfoDebug
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:dataBindingMergeGenClassesDebug
+> Task :app:generateDebugResValues
+> Task :app:generateDebugResources
+> Task :app:dataBindingExportFeaturePackageIdsDebug
+> Task :app:mainApkListPersistenceDebug
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:processDebugManifest
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:processDebugResources
+> Task :app:kaptGenerateStubsDebugKotlin
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders
+> Task :app:generateDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:compileReleaseAidl NO-SOURCE
+> Task :app:compileReleaseRenderscript NO-SOURCE
+> Task :app:generateReleaseBuildConfig
+> Task :app:writeReleaseApplicationId
+> Task :app:generateSafeArgsRelease
+> Task :app:generateReleaseSources
+> Task :app:dataBindingExportBuildInfoRelease
+> Task :app:generateReleaseResValues
+> Task :app:generateReleaseResources
+> Task :app:dataBindingMergeDependencyArtifactsRelease
+> Task :app:mainApkListPersistenceRelease
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:processReleaseManifest
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+> Task :app:mergeExtDexDebug
+> Task :app:dataBindingMergeGenClassesRelease
+
+> Task :app:kaptDebugKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:mergeReleaseResources
+> Task :app:dataBindingGenBaseClassesRelease
+> Task :app:processReleaseResources
+> Task :app:kaptGenerateStubsReleaseKotlin
+> Task :app:dataBindingExportFeaturePackageIdsRelease
+> Task :app:compileDebugKotlin
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:javaPreCompileDebug
+
+> Task :app:kaptReleaseKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1
+> Task :app:compileDebugJavaWithJavac
+> Task :app:compileDebugSources
+> Task :app:dexBuilderDebug
+
+> Task :app:kaptReleaseKotlin
+[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:compileReleaseKotlin
+> Task :app:mergeDebugJavaResource
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:javaPreCompileRelease
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:compileReleaseSources
+> Task :app:lintVitalRelease SKIPPED
+> Task :app:dexBuilderRelease
+> Task :app:desugarReleaseFileDependencies
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders
+> Task :app:generateReleaseAssets
+> Task :app:mergeReleaseAssets
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :app:mergeReleaseJniLibFolders
+
+> Task :app:lint
+Ran lint on variant debug: 19 issues found
+Ran lint on variant release: 19 issues found
+Wrote HTML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.html
+Wrote XML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.xml
+
+> Task :app:mergeReleaseNativeLibs
+> Task :app:stripReleaseDebugSymbols
+> Task :app:mergeExtDexRelease
+> Task :app:mergeReleaseJavaResource
+> Task :app:kaptGenerateStubsDebugUnitTestKotlin
+> Task :app:kaptDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:kaptGenerateStubsReleaseUnitTestKotlin
+> Task :app:kaptReleaseUnitTestKotlin
+> Task :app:compileReleaseUnitTestKotlin
+> Task :app:preReleaseUnitTestBuild UP-TO-DATE
+> Task :app:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :app:mergeDexRelease
+> Task :app:packageRelease
+> Task :app:assembleRelease
+> Task :app:assemble
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testDebugUnitTest
+> Task :app:javaPreCompileReleaseUnitTest
+> Task :app:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testReleaseUnitTest
+> Task :app:test
+> Task :app:check
+> Task :app:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.6.4/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 32s
+82 actionable tasks: 79 executed, 3 up-to-date
+Used daemon with pid 37660
+Execution time 32043 ms
+
+* Running cleanup for measured build #11
+> Task :clean
+> Task :app:clean
+
+BUILD SUCCESSFUL in 1s
+2 actionable tasks: 2 executed
+Used daemon with pid 37660
+
+* Running measured build #11
+> Task :assemble UP-TO-DATE
+> Task :spotlessKotlin UP-TO-DATE
+> Task :spotlessKotlinCheck UP-TO-DATE
+> Task :spotlessCheck UP-TO-DATE
+> Task :check UP-TO-DATE
+> Task :build UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :app:compileDebugRenderscript NO-SOURCE
+> Task :app:writeDebugApplicationId
+> Task :app:generateSafeArgsDebug
+> Task :app:prepareLintJar UP-TO-DATE
+> Task :app:prepareLintJarForPublish UP-TO-DATE
+> Task :app:generateDebugSources
+> Task :app:dataBindingExportBuildInfoDebug
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:generateDebugResValues
+> Task :app:generateDebugResources
+> Task :app:dataBindingMergeGenClassesDebug
+> Task :app:dataBindingExportFeaturePackageIdsDebug
+> Task :app:mainApkListPersistenceDebug
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:processDebugManifest
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:processDebugResources
+> Task :app:kaptGenerateStubsDebugKotlin
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders
+> Task :app:generateDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:compileReleaseAidl NO-SOURCE
+> Task :app:compileReleaseRenderscript NO-SOURCE
+> Task :app:generateReleaseBuildConfig
+> Task :app:writeReleaseApplicationId
+> Task :app:generateSafeArgsRelease
+> Task :app:generateReleaseSources
+> Task :app:dataBindingExportBuildInfoRelease
+> Task :app:generateReleaseResValues
+> Task :app:generateReleaseResources
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+> Task :app:mainApkListPersistenceRelease
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:processReleaseManifest
+> Task :app:mergeExtDexDebug
+> Task :app:dataBindingMergeGenClassesRelease
+> Task :app:dataBindingExportFeaturePackageIdsRelease
+> Task :app:dataBindingMergeDependencyArtifactsRelease
+
+> Task :app:kaptDebugKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:mergeReleaseResources
+> Task :app:dataBindingGenBaseClassesRelease
+> Task :app:processReleaseResources
+> Task :app:kaptGenerateStubsReleaseKotlin
+> Task :app:compileDebugKotlin
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:javaPreCompileDebug
+
+> Task :app:kaptReleaseKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1
+> Task :app:compileDebugJavaWithJavac
+> Task :app:compileDebugSources
+> Task :app:dexBuilderDebug
+
+> Task :app:kaptReleaseKotlin
+[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:compileReleaseKotlin
+> Task :app:mergeDebugJavaResource
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:javaPreCompileRelease
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:compileReleaseSources
+> Task :app:lintVitalRelease SKIPPED
+> Task :app:dexBuilderRelease
+> Task :app:desugarReleaseFileDependencies
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders
+> Task :app:generateReleaseAssets
+> Task :app:mergeReleaseAssets
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :app:mergeReleaseJniLibFolders
+
+> Task :app:lint
+Ran lint on variant debug: 19 issues found
+Ran lint on variant release: 19 issues found
+Wrote HTML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.html
+Wrote XML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.xml
+
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:preReleaseUnitTestBuild UP-TO-DATE
+> Task :app:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :app:mergeReleaseJavaResource
+> Task :app:mergeReleaseNativeLibs
+> Task :app:stripReleaseDebugSymbols
+> Task :app:kaptGenerateStubsDebugUnitTestKotlin
+> Task :app:kaptDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:mergeExtDexRelease
+> Task :app:kaptGenerateStubsReleaseUnitTestKotlin
+> Task :app:kaptReleaseUnitTestKotlin
+> Task :app:compileReleaseUnitTestKotlin
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testDebugUnitTest
+> Task :app:javaPreCompileReleaseUnitTest
+> Task :app:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testReleaseUnitTest
+> Task :app:test
+> Task :app:check
+> Task :app:mergeDexRelease
+> Task :app:packageRelease
+> Task :app:assembleRelease
+> Task :app:assemble
+> Task :app:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.6.4/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 40s
+82 actionable tasks: 79 executed, 3 up-to-date
+Used daemon with pid 37660
+Execution time 41013 ms
+
+* Running cleanup for measured build #12
+> Task :clean
+> Task :app:clean
+
+BUILD SUCCESSFUL in 1s
+2 actionable tasks: 2 executed
+Used daemon with pid 37660
+
+* Running measured build #12
+> Task :assemble UP-TO-DATE
+> Task :spotlessKotlin UP-TO-DATE
+> Task :spotlessKotlinCheck UP-TO-DATE
+> Task :spotlessCheck UP-TO-DATE
+> Task :check UP-TO-DATE
+> Task :build UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :app:compileDebugRenderscript NO-SOURCE
+> Task :app:writeDebugApplicationId
+> Task :app:generateSafeArgsDebug
+> Task :app:prepareLintJar UP-TO-DATE
+> Task :app:prepareLintJarForPublish UP-TO-DATE
+> Task :app:generateDebugSources
+> Task :app:dataBindingExportBuildInfoDebug
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:generateDebugResValues
+> Task :app:generateDebugResources
+> Task :app:dataBindingExportFeaturePackageIdsDebug
+> Task :app:dataBindingMergeGenClassesDebug
+> Task :app:mainApkListPersistenceDebug
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:processDebugManifest
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:processDebugResources
+> Task :app:kaptGenerateStubsDebugKotlin
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders
+> Task :app:generateDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:compileReleaseAidl NO-SOURCE
+> Task :app:compileReleaseRenderscript NO-SOURCE
+> Task :app:generateReleaseBuildConfig
+> Task :app:writeReleaseApplicationId
+> Task :app:generateSafeArgsRelease
+> Task :app:generateReleaseSources
+> Task :app:dataBindingExportBuildInfoRelease
+> Task :app:generateReleaseResValues
+> Task :app:generateReleaseResources
+> Task :app:dataBindingMergeDependencyArtifactsRelease
+> Task :app:dataBindingMergeGenClassesRelease
+> Task :app:mainApkListPersistenceRelease
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:processReleaseManifest
+> Task :app:dataBindingExportFeaturePackageIdsRelease
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+> Task :app:mergeExtDexDebug
+
+> Task :app:kaptDebugKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:mergeReleaseResources
+> Task :app:dataBindingGenBaseClassesRelease
+> Task :app:processReleaseResources
+> Task :app:kaptGenerateStubsReleaseKotlin
+> Task :app:compileDebugKotlin
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:javaPreCompileDebug
+> Task :app:compileDebugJavaWithJavac
+> Task :app:compileDebugSources
+
+> Task :app:kaptReleaseKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:dexBuilderDebug
+> Task :app:compileReleaseKotlin
+> Task :app:mergeDebugJavaResource
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:javaPreCompileRelease
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:compileReleaseSources
+> Task :app:lintVitalRelease SKIPPED
+> Task :app:dexBuilderRelease
+> Task :app:desugarReleaseFileDependencies
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders
+> Task :app:generateReleaseAssets
+> Task :app:mergeReleaseAssets
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :app:mergeReleaseJniLibFolders
+
+> Task :app:lint
+Ran lint on variant debug: 19 issues found
+Ran lint on variant release: 19 issues found
+Wrote HTML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.html
+Wrote XML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.xml
+
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:preReleaseUnitTestBuild UP-TO-DATE
+> Task :app:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :app:mergeReleaseJavaResource
+> Task :app:kaptGenerateStubsDebugUnitTestKotlin
+> Task :app:kaptDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:kaptGenerateStubsReleaseUnitTestKotlin
+> Task :app:kaptReleaseUnitTestKotlin
+> Task :app:compileReleaseUnitTestKotlin
+> Task :app:mergeExtDexRelease
+> Task :app:javaPreCompileReleaseUnitTest
+> Task :app:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testReleaseUnitTest
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testDebugUnitTest
+> Task :app:test
+> Task :app:check
+> Task :app:mergeReleaseNativeLibs
+> Task :app:stripReleaseDebugSymbols
+> Task :app:mergeDexRelease
+> Task :app:packageRelease
+> Task :app:assembleRelease
+> Task :app:assemble
+> Task :app:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.6.4/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 35s
+82 actionable tasks: 79 executed, 3 up-to-date
+Used daemon with pid 37660
+Execution time 35289 ms
+
+* Running cleanup for measured build #13
+> Task :clean
+> Task :app:clean
+
+BUILD SUCCESSFUL in 777ms
+2 actionable tasks: 2 executed
+Used daemon with pid 37660
+
+* Running measured build #13
+> Task :assemble UP-TO-DATE
+> Task :spotlessKotlin UP-TO-DATE
+> Task :spotlessKotlinCheck UP-TO-DATE
+> Task :spotlessCheck UP-TO-DATE
+> Task :check UP-TO-DATE
+> Task :build UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :app:compileDebugRenderscript NO-SOURCE
+> Task :app:writeDebugApplicationId
+> Task :app:generateSafeArgsDebug
+> Task :app:prepareLintJar UP-TO-DATE
+> Task :app:prepareLintJarForPublish UP-TO-DATE
+> Task :app:generateDebugSources
+> Task :app:dataBindingExportBuildInfoDebug
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:generateDebugResValues
+> Task :app:generateDebugResources
+> Task :app:dataBindingMergeGenClassesDebug
+> Task :app:dataBindingExportFeaturePackageIdsDebug
+> Task :app:mainApkListPersistenceDebug
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:processDebugManifest
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:processDebugResources
+> Task :app:kaptGenerateStubsDebugKotlin
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders
+> Task :app:generateDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:compileReleaseAidl NO-SOURCE
+> Task :app:compileReleaseRenderscript NO-SOURCE
+> Task :app:generateReleaseBuildConfig
+> Task :app:writeReleaseApplicationId
+> Task :app:generateSafeArgsRelease
+> Task :app:generateReleaseSources
+> Task :app:dataBindingExportBuildInfoRelease
+> Task :app:generateReleaseResValues
+> Task :app:dataBindingMergeGenClassesRelease
+> Task :app:generateReleaseResources
+> Task :app:dataBindingExportFeaturePackageIdsRelease
+> Task :app:mainApkListPersistenceRelease
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:processReleaseManifest
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+
+> Task :app:kaptDebugKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1
+> Task :app:mergeExtDexDebug
+> Task :app:dataBindingMergeDependencyArtifactsRelease
+> Task :app:mergeReleaseResources
+> Task :app:dataBindingGenBaseClassesRelease
+> Task :app:processReleaseResources
+
+> Task :app:kaptDebugKotlin
+[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:kaptGenerateStubsReleaseKotlin
+> Task :app:compileDebugKotlin
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:javaPreCompileDebug
+
+> Task :app:kaptReleaseKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1
+> Task :app:compileDebugJavaWithJavac
+> Task :app:compileDebugSources
+> Task :app:dexBuilderDebug
+
+> Task :app:kaptReleaseKotlin
+[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:compileReleaseKotlin
+> Task :app:mergeDebugJavaResource
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:javaPreCompileRelease
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:compileReleaseSources
+> Task :app:lintVitalRelease SKIPPED
+> Task :app:dexBuilderRelease
+> Task :app:desugarReleaseFileDependencies
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders
+> Task :app:generateReleaseAssets
+> Task :app:mergeReleaseAssets
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :app:mergeReleaseJniLibFolders
+
+> Task :app:lint
+Ran lint on variant debug: 19 issues found
+Ran lint on variant release: 19 issues found
+Wrote HTML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.html
+Wrote XML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.xml
+
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:preReleaseUnitTestBuild UP-TO-DATE
+> Task :app:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :app:mergeReleaseJavaResource
+> Task :app:mergeExtDexRelease
+> Task :app:kaptGenerateStubsDebugUnitTestKotlin
+> Task :app:kaptDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:kaptGenerateStubsReleaseUnitTestKotlin
+> Task :app:kaptReleaseUnitTestKotlin
+> Task :app:compileReleaseUnitTestKotlin
+> Task :app:mergeDexRelease
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testDebugUnitTest
+> Task :app:mergeReleaseNativeLibs
+> Task :app:stripReleaseDebugSymbols
+> Task :app:packageRelease
+> Task :app:assembleRelease
+> Task :app:assemble
+> Task :app:javaPreCompileReleaseUnitTest
+> Task :app:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testReleaseUnitTest
+> Task :app:test
+> Task :app:check
+> Task :app:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.6.4/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 41s
+82 actionable tasks: 79 executed, 3 up-to-date
+Used daemon with pid 37660
+Execution time 41625 ms
+
+* Running cleanup for measured build #14
+> Task :clean
+> Task :app:clean
+
+BUILD SUCCESSFUL in 1s
+2 actionable tasks: 2 executed
+Used daemon with pid 37660
+
+* Running measured build #14
+> Task :assemble UP-TO-DATE
+> Task :spotlessKotlin UP-TO-DATE
+> Task :spotlessKotlinCheck UP-TO-DATE
+> Task :spotlessCheck UP-TO-DATE
+> Task :check UP-TO-DATE
+> Task :build UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :app:compileDebugRenderscript NO-SOURCE
+> Task :app:writeDebugApplicationId
+> Task :app:generateSafeArgsDebug
+> Task :app:prepareLintJar UP-TO-DATE
+> Task :app:prepareLintJarForPublish UP-TO-DATE
+> Task :app:generateDebugSources
+> Task :app:dataBindingExportBuildInfoDebug
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:generateDebugResValues
+> Task :app:generateDebugResources
+> Task :app:dataBindingMergeGenClassesDebug
+> Task :app:dataBindingExportFeaturePackageIdsDebug
+> Task :app:mainApkListPersistenceDebug
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:processDebugManifest
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:processDebugResources
+> Task :app:kaptGenerateStubsDebugKotlin
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders
+> Task :app:generateDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:compileReleaseAidl NO-SOURCE
+> Task :app:compileReleaseRenderscript NO-SOURCE
+> Task :app:generateReleaseBuildConfig
+> Task :app:writeReleaseApplicationId
+> Task :app:generateSafeArgsRelease
+> Task :app:generateReleaseSources
+> Task :app:dataBindingExportBuildInfoRelease
+> Task :app:generateReleaseResValues
+> Task :app:generateReleaseResources
+> Task :app:mainApkListPersistenceRelease
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:dataBindingMergeGenClassesRelease
+> Task :app:processReleaseManifest
+> Task :app:dataBindingExportFeaturePackageIdsRelease
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+> Task :app:mergeExtDexDebug
+> Task :app:dataBindingMergeDependencyArtifactsRelease
+
+> Task :app:kaptDebugKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1
+> Task :app:mergeReleaseResources
+> Task :app:dataBindingGenBaseClassesRelease
+> Task :app:processReleaseResources
+
+> Task :app:kaptDebugKotlin
+[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:kaptGenerateStubsReleaseKotlin
+
+> Task :app:kaptReleaseKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1
+> Task :app:compileDebugKotlin
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:javaPreCompileDebug
+> Task :app:compileDebugJavaWithJavac
+> Task :app:compileDebugSources
+> Task :app:dexBuilderDebug
+
+> Task :app:kaptReleaseKotlin
+[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:compileReleaseKotlin
+> Task :app:mergeDebugJavaResource
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:javaPreCompileRelease
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:compileReleaseSources
+> Task :app:lintVitalRelease SKIPPED
+> Task :app:dexBuilderRelease
+> Task :app:desugarReleaseFileDependencies
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders
+> Task :app:generateReleaseAssets
+> Task :app:mergeReleaseAssets
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :app:mergeReleaseJniLibFolders
+
+> Task :app:lint
+Ran lint on variant debug: 19 issues found
+Ran lint on variant release: 19 issues found
+Wrote HTML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.html
+Wrote XML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.xml
+
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:preReleaseUnitTestBuild UP-TO-DATE
+> Task :app:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :app:mergeReleaseJavaResource
+> Task :app:mergeReleaseNativeLibs
+> Task :app:stripReleaseDebugSymbols
+> Task :app:kaptGenerateStubsDebugUnitTestKotlin
+> Task :app:kaptDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:kaptGenerateStubsReleaseUnitTestKotlin
+> Task :app:kaptReleaseUnitTestKotlin
+> Task :app:compileReleaseUnitTestKotlin
+> Task :app:mergeExtDexRelease
+> Task :app:javaPreCompileReleaseUnitTest
+> Task :app:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testReleaseUnitTest
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testDebugUnitTest
+> Task :app:test
+> Task :app:check
+> Task :app:mergeDexRelease
+> Task :app:packageRelease
+> Task :app:assembleRelease
+> Task :app:assemble
+> Task :app:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.6.4/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 37s
+82 actionable tasks: 79 executed, 3 up-to-date
+Used daemon with pid 37660
+Execution time 37229 ms
+
+* Running cleanup for measured build #15
+> Task :clean
+> Task :app:clean
+
+BUILD SUCCESSFUL in 986ms
+2 actionable tasks: 2 executed
+Used daemon with pid 37660
+
+* Running measured build #15
+> Task :assemble UP-TO-DATE
+> Task :spotlessKotlin UP-TO-DATE
+> Task :spotlessKotlinCheck UP-TO-DATE
+> Task :spotlessCheck UP-TO-DATE
+> Task :check UP-TO-DATE
+> Task :build UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :app:compileDebugRenderscript NO-SOURCE
+> Task :app:generateDebugBuildConfig
+> Task :app:writeDebugApplicationId
+> Task :app:generateSafeArgsDebug
+> Task :app:prepareLintJar UP-TO-DATE
+> Task :app:prepareLintJarForPublish UP-TO-DATE
+> Task :app:generateDebugSources
+> Task :app:dataBindingExportBuildInfoDebug
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:generateDebugResValues
+> Task :app:generateDebugResources
+> Task :app:dataBindingExportFeaturePackageIdsDebug
+> Task :app:mainApkListPersistenceDebug
+> Task :app:dataBindingMergeGenClassesDebug
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:processDebugManifest
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:processDebugResources
+> Task :app:kaptGenerateStubsDebugKotlin
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders
+> Task :app:generateDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:compileReleaseAidl NO-SOURCE
+> Task :app:compileReleaseRenderscript NO-SOURCE
+> Task :app:generateReleaseBuildConfig
+> Task :app:writeReleaseApplicationId
+> Task :app:generateSafeArgsRelease
+> Task :app:generateReleaseSources
+> Task :app:dataBindingExportBuildInfoRelease
+> Task :app:generateReleaseResValues
+> Task :app:generateReleaseResources
+> Task :app:dataBindingMergeDependencyArtifactsRelease
+> Task :app:mainApkListPersistenceRelease
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:processReleaseManifest
+> Task :app:dataBindingMergeGenClassesRelease
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+> Task :app:mergeExtDexDebug
+
+> Task :app:kaptDebugKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1
+> Task :app:mergeReleaseResources
+> Task :app:dataBindingGenBaseClassesRelease
+> Task :app:processReleaseResources
+> Task :app:kaptGenerateStubsReleaseKotlin
+> Task :app:dataBindingExportFeaturePackageIdsRelease
+
+> Task :app:kaptDebugKotlin
+[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:compileDebugKotlin
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:javaPreCompileDebug
+> Task :app:compileDebugJavaWithJavac
+> Task :app:compileDebugSources
+
+> Task :app:kaptReleaseKotlin
+ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1ANTLR Tool version 4.5.3 used for code generation does not match the current runtime version 4.7.1ANTLR Runtime version 4.5.3 used for parser compilation does not match the current runtime version 4.7.1[WARN] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (NON_INCREMENTAL).
+
+> Task :app:dexBuilderDebug
+> Task :app:compileReleaseKotlin
+> Task :app:mergeDebugJavaResource
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:javaPreCompileRelease
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:compileReleaseSources
+> Task :app:lintVitalRelease SKIPPED
+> Task :app:dexBuilderRelease
+> Task :app:desugarReleaseFileDependencies
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders
+> Task :app:generateReleaseAssets
+> Task :app:mergeReleaseAssets
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :app:mergeReleaseJniLibFolders
+
+> Task :app:lint
+Ran lint on variant debug: 19 issues found
+Ran lint on variant release: 19 issues found
+Wrote HTML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.html
+Wrote XML report to file:///Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/sunflower/app/build/reports/lint-results.xml
+
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:preReleaseUnitTestBuild UP-TO-DATE
+> Task :app:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :app:mergeExtDexRelease
+> Task :app:mergeReleaseNativeLibs
+> Task :app:stripReleaseDebugSymbols
+> Task :app:kaptGenerateStubsDebugUnitTestKotlin
+> Task :app:kaptDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:kaptGenerateStubsReleaseUnitTestKotlin
+> Task :app:kaptReleaseUnitTestKotlin
+> Task :app:compileReleaseUnitTestKotlin
+> Task :app:mergeDexRelease
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testDebugUnitTest
+> Task :app:mergeReleaseJavaResource
+> Task :app:packageRelease
+> Task :app:assembleRelease
+> Task :app:assemble
+> Task :app:javaPreCompileReleaseUnitTest
+> Task :app:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :app:testReleaseUnitTest
+> Task :app:test
+> Task :app:check
+> Task :app:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.6.4/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 40s
+82 actionable tasks: 79 executed, 3 up-to-date
+Used daemon with pid 37660
+Execution time 40589 ms
+
+* Stopping daemons
+Running command /Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/gradle-user-home/wrapper/dists/gradle-5.6.4-all/ankdp27end7byghfw1q2sw75f/gradle-5.6.4/bin/gradle --stop --gradle-user-home /Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/gradle-user-home
+Stopping Daemon(s)
+1 Daemon stopped
+
+* Results written to /Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/older
+  /Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/older/benchmark.csv
+  /Users/ubiratansoares/gradle-profiler-experiments/bumping-gradle-agp/older/benchmark.html
+

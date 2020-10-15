@@ -1,0 +1,7 @@
+build {
+    title = "Build Project"
+    tasks = "build"
+    gradle-args = ["--no-build-cache"]
+    daemon = warm
+    cleanup-tasks = ["clean"]
+}
